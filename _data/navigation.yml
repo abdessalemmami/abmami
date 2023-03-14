@@ -2,14 +2,14 @@
 main:
 #  - title: "Blog"
 #    url: /blog
-  - title: "Posts"
-    url: /posts
-  - title: "Projects"
-    url: /projects
-  - title: "Challenges"
-    url: /challenges
-  - title: "Activities"
-    url: /activities
+#  - title: "Posts"
+#    url: /posts
+#  - title: "Projects"
+#    url: /projects
+#  - title: "Challenges"
+#    url: /challenges
+#  - title: "Activities"
+#    url: /activities
   - title: "About"
     url: /about
 

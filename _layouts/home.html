@@ -1,0 +1,46 @@
+---
+layout: splash
+author_profile: false
+description: "We talk about Aritificial Intelligence & Machine Learning"
+title: "Abdessalem Mami"
+og_title: "Abdessalem Mami"
+
+
+header:
+    overlay_filter: "0.6"
+    overlay_image: "/assets/images/og-default-header.jpg"
+    show_overlay_excerpt: false
+
+feature_row:
+  - image_path: assets/images/500x300.jpg
+    alt: "Blog"
+    title: "Blog"
+    excerpt: ""
+    url: "/blog"
+  - image_path: assets/images/500x300.jpg
+    alt: "About"
+    title: "About"
+    excerpt: "Hi there, my name is Abdessalem Mami."
+    url: "/about"
+---
+
+<p align="center">
+    Artificial Intelligence 🤖<br/>
+</p>
+
+<hr>
+
+{% include feature_row %}
+
+<div class="archive">
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+</div>
+<link rel="shortcut icon" href="/favicon.ico">
+
+

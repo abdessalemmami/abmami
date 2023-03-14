@@ -15,8 +15,9 @@ title                    : "Abdessalem Mami"
 email                    : "abdessalem.mami@esprit.tn"
 title_separator          : "-"
 name                     : "Abdessalem Mami"
+teaser                   : "assets/images/og_default_header.jpg"
 description              : "Personal website of Abdessalem Mami"
-twitter_username: username
+twitter_username: AbdessalemMami
 github_username: abmami
 minimal_mistakes_skin: default
 search: true
