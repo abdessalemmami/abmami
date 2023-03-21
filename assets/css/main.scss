@@ -13,20 +13,20 @@ $primary-light-color  : #292929 !default;
 $primary-dark-color   : #000000 !default;
 $secondary-color      : #06d6a0 !default;
 $secondary-light-color: #63ffd1 !default;
-$secondary-dark-color : #0090a3 !default;
+$secondary-dark-color : #3b5998 !default;
 $primary-text-color   : #ffffff !default;
 $secondary-text-color : #000000 !default;
 
 $body-color                 : $primary-text-color !default;
 $navigation-color           : $primary-light-color !default;
-$link-color                 : $secondary-color !default;
+$link-color                 : $primary-color !default;
 $link-color-hover           : $secondary-light-color !default;
-$masthead-link-color        : $primary-text-color !default;
-$masthead-link-color-hover  : $secondary-color !default;
+$masthead-link-color        : $secondary-text-color !default;
+$masthead-link-color-hover  : $secondary-dark-color !default;
 
 /*
   FONT CUSTOMIZATION
-  ======================= */
+  ======================= 
 
 $old-sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -37,118 +37,15 @@ $global-font-family: $raleway !default;
 $header-font-family: $montserrat !default;
 $sans-serif: $raleway !default;
 $sans-serif-narrow: $raleway !default;
-
+*/
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
-strong, b {
-  font-weight: 700
-}
-
-/*
-  PAGE HERO
-  ======================= */
-
-.typewriter-wrapper {
-  color: #63ffd1;
-}
-
-.typewriter-container {
-  padding-top: 0.8em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.page__hero--overlay {
-  padding: 8em 0;
-}
-
-/*
-  FONT SIZING
-  ======================= */
-
-.talk-section {
-  font-size: 0.75em;
-}
-
-/*
-  POST PREVIEW
-  ======================= */
-
-h3.archive__date {
-  margin: 0 0 0 0;
-  font-size: $type-size-6;
-  color: $light-gray;
-  font-style: normal;
-  border-bottom: none;
-
-  + .list__item .archive__item-title {
-    margin-top: 0em;
+a {
+  text-decoration: none;
+  &:hover {
+    color: $secondary-dark-color;
   }
-}
-
-.archive__item-title {
-  margin-top: 0em;
-  color: white;
-}
-
-.archive_item p {
-  color: white;
-}
-
-.archive__item_titlecontainer {
-  border-radius: $border-radius;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-  padding: 1rem 1rem 1rem 1rem;
-  margin-bottom: 8px;
-  width:100%;
-}
-
-.feature__item--row .archive__item_titlecontainer {
-  background-color: rgba(0, 0, 0, 0.35);
-  padding: 0.2rem 0.2rem 0.2rem 1rem;
-  margin-bottom: 8px;
-}
-
-.archive__item-teaser, .archive__item-teaser-imageclickhandler {
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  min-height: 240px;
-  width: 100%;
-}
-
-.wrapped_body {
-  margin: 0em 10em;
-}
-
-.feature__item--row .archive__item-teaser {
-  min-height: 0px;
-}
-
-.archive__item-teaser-imageclickhandler {
-  position: absolute;
-  top: 0;
-}
-
-.archive__item-excerpt {
-  display: block;
-}
-
-.archive__item:hover {
-  .archive__item-title {
-    color: $lighter-gray  ;
-    text-decoration: none;
-  }
-}
-
-.list__item {
-  margin-bottom: 2em;
 }
 
 /*
@@ -156,38 +53,154 @@ h3.archive__date {
   ======================= */
 
 .masthead {
-  background-color: $navigation-color;
-  border-bottom: 1px solid $navigation-color;
+  background-color: $primary-text-color;
+  border-bottom: 1px solid $primary-text-color;
 
   &__inner-wrap {
-    padding: 0.3em 1em;
+    padding: 0.6em 1em;
   }
 }
 
+
 .greedy-nav {
-  background: $navigation-color;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+        align-items: center;
+  background: $background-color;
 
   a {
-    font-size: $type-size-5;
+    display: block;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    color: $masthead-link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+      font-weight: bolder;
+    }
+
+    &.site-title {
+      margin-left: 0;
+    }
   }
 
   button {
-    background-color: $navigation-color;
+    padding: 0 0.5rem;
+    align-self: stretch;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
   }
 
-  .visible-links a {
-      &:before {
-        height: 0px;
+  .visible-links {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+     justify-content: flex-end;
+    -webkit-box-flex: 1;
+                flex: 1;
+    padding-right: 2rem;
+    overflow: hidden;
+
+    li {
+      -webkit-box-flex: 0;
+                  flex: none;
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
       }
+    }
+
+    a {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background: $secondary-dark-color;
+        width: 100%;
+        -webkit-transition: $global-transition;
+        transition: $global-transition;
+        -webkit-transform: scaleX(0) translate3d(0, 0 , 0);
+                transform: scaleX(0) translate3d(0, 0 , 0); /* hide*/
+      }
+
+      &:hover:before {
+        -webkit-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+            transform: scaleX(1); /* reveal*/
+      }
+    }
   }
 
   .hidden-links {
-    border: 1px solid $navigation-color;
-    background: $navigation-color;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: $background-color;
+    box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+
+    &.hidden {
+      display: none;
+    }
 
     a {
+      margin: 0;
+      padding: 10px 20px;
+      font-size: $type-size-5;
+
       &:hover {
-        background: $navigation-color;
+        color: $masthead-link-color-hover;
+        background: $navicon-link-color-hover;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      right: 10px;
+      width: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: $border-color transparent;
+      display: block;
+      z-index: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      width: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: $background-color transparent;
+      display: block;
+      z-index: 1;
+    }
+
+    li {
+      display: block;
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border-bottom: none;
       }
     }
   }

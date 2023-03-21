@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)[![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-red.svg)](https://jekyllrb.com/)
 
-Welcome to my personal website.
+Welcome to my personal website 💙
 
 <p align="center">
     <img src="assets\images\for-github.png">

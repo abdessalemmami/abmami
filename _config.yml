@@ -17,10 +17,9 @@ title_separator          : "-"
 name                     : "Abdessalem Mami"
 teaser                   : "assets/images/og_default_header.jpg"
 description              : "Personal website of Abdessalem Mami"
-twitter_username: AbdessalemMami
+#twitter_username: AbdessalemMami
 github_username: abmami
-minimal_mistakes_skin: default
-search: true
+search: false
 url                      : "https://abmami.github.io"
 # baseurl                  : "/"
 repository               : "abmami/abmami.github.io"
@@ -31,11 +30,13 @@ words_per_minute         : 220
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Africa/Tunis # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Reading Files
 include:
@@ -44,6 +45,7 @@ include:
 exclude:
   - .asset-cache
   - .bundle
+  - .jekyll-cache
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/plugins
@@ -90,12 +92,12 @@ author:
   #twitter: "AbdessalemMami"
   #linkedin: "abdessalem-mami"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://abmami.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/AbdessalemMami"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://abmami.github.io"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/AbdessalemMami"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/abmami"
@@ -108,9 +110,9 @@ footer:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/abdessalem-mami"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/AbdessalemMami"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  url: "https://twitter.com/AbdessalemMami"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/abmami"
