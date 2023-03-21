@@ -1,9 +1,9 @@
 ---
 title: "Video Insights App"
 classes: wide
-excerpt: "Examples and code for displaying images in posts."
+excerpt: "An app that extracts useful insights from recorded learning sessions using natural language processing techniques."
 header:
-  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+  teaser: "assets/images/projects/vi-1.jpg"
 tags: 
   - projects
   - srm

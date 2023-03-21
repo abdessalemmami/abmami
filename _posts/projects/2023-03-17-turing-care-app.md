@@ -1,9 +1,9 @@
 ---
 title: "TuringCare App"
 classes: wide
-excerpt: "Examples and code for displaying images in posts."
+excerpt: "A web application that provides access to patients' records at one place, and allows healthcare professionals to detect lung diseases from Chest X-Ray images."
 header:
-  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+  teaser: "assets/images/projects/tc-1.jpg"
 tags: 
   - sample post
   - images

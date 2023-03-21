@@ -12,46 +12,46 @@ header:
     show_overlay_excerpt: false
 
 feature_row:
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
+  - image_path: assets/images/projects/vi-1.jpg
+    alt: "Video Insights"
+    title: "Video Insights"
+    excerpt: "An app that extracts useful insights from recorded learning sessions using natural language processing techniques."
+    url: "/projects/video-insights-app"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: assets/images/projects/tslt-1.jpg
+    alt: "Tunisian Sign Language Transcription"
+    title: "Tunisian Sign Language Transcription"
+    excerpt: "An app that transcribes in real-time the Tunisian Sign Language in the field of healthcare."
+    url: "/projects/tunisian-sign-language-transcription-app"
     btn_label: "Read More"
     btn_class: "btn--primary"	
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
+  - image_path: assets/images/projects/emo-1.jpg
+    alt: "Emotionly App"
+    title: "Emotionly"
+    excerpt: "A mobile app that recognizes human emotions from facial expressions and speech."
+    url: "/projects/emotionly-app"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
+  - image_path: assets/images/projects/tc-1.jpg
+    alt: "TuringCare"
+    title: "TuringCare"
+    excerpt: "A web application that provides access to patients' records at one place, and allows healthcare professionals to detect lung diseases from Chest X-Ray images."
+    url: "/projects/turing-care-app"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
+  - image_path: assets/images/projects/pharm-1.jpg
+    alt: "PharmData"
+    title: "PharmData"
+    excerpt: "A web application that offers data visualization and applies ML algorithms to identify patterns in data and make predictions and forecasting to answer pharmacy-related business questions."
+    url: "/projects/pharmdata-app"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: assets/images/500x300.jpg
-    alt: "Project X"
-    title: "Project X"
-    excerpt: "Project X description"
-    url: "/projects/x"
+  - image_path: assets/images/projects/srm-1.jpeg
+    alt: "Supplier Relationship Management"
+    title: "Supplier Relationship Management"
+    excerpt: "A web application that provides an online platform for collaboration between a company and its suppliers in different business processes, such as the management of quality incidents, complaint reports, suppliers database, and declarations of costs."
+    url: "/projects/supplier-relationship-management-app"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
@@ -60,6 +60,8 @@ feature_row:
 My projects are carried out in the context of my academic studies, and also during my internships at companies. A variety of tools, technologies, and methodologies have been used, but they mainly include machine learning workflows from business understanding to deploying models, and software development with more focus on web-based & mobile applications and systems.
 
 👉 Here's a list of my projects below, but if you want to get more information about a specific project, you can always visit the blog post related to it where it's more detailed.
+
+{% include feature_row %}
 
 <!--
 ## Video Insights Application (Work In Progress)
@@ -109,4 +111,3 @@ This project consists of developing a web application that provides an online pl
 
 -->
 
-{% include feature_row %}

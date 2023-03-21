@@ -1,9 +1,9 @@
 ---
 title: "Supplier Relationship Management App"
 classes: wide
-excerpt: "Project desription"
+excerpt: "A web application that provides an online platform for collaboration between a company and its suppliers in different business processes, such as the management of quality incidents, complaint reports, suppliers database, and declarations of costs."
 header:
-  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+  teaser: "assets/images/projects/srm-1.jpeg"
 tags: 
   - projects
   - srm

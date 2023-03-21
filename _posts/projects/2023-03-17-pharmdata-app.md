@@ -1,9 +1,9 @@
 ---
 title: "PharmData App"
 classes: wide
-excerpt: "Project description"
+excerpt: "A web application that offers data visualization and applies ML algorithms to identify patterns in data and make predictions and forecasting to answer pharmacy-related business questions."
 header:
-  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+  teaser: "assets/images/projects/pharm-1.jpg"
 tags: 
   - sample post
   - images
