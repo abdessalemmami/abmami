@@ -59,7 +59,7 @@ We used CamemBERT, a state-of-the-art language model for French, to perform keyw
 Transformer-based models are the current state-of-the-art for NLP tasks. It's a neural network architecture that uses attention mechanisms to learn contextual relations between words in a text, and it was introduced in 2017 in the paper [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf). It can be used for a variety of tasks, including text classification, question answering, and summarization. CamemBERT-base is composed of an embedding layer to represent each word as a vector, followed by 12 hidden layers composed mainly of two types of transformations: self-attention transformations and dense transformations. The model has 12 hidden layers, 768 hidden size, 12 attention heads, and 110 million parameters.
 
 <p align="center">
-![Camembert Architecture](/assets/images/projects/project-1/camembert-architecture.png)
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/projects/project-1/camembert-architecture.png" alt="CamemBERT Architecture">
 </p>
 
 You can find more details about CamemBERT [here](https://camembert-model.fr/).
