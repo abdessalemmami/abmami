@@ -77,6 +77,8 @@ In this approach, we first pre-finetune CamemBERT on the task of sentence simila
 Approach 2: Direct Fine-tuning for Keyword Extraction
 In this streamlined approach, we directly fine-tune CamemBERT for the keyword extraction task without pre-finetuning on sentence similarity. By focusing solely on the target task, we optimize the fine-tuning process and enable CamemBERT to learn directly from the keyword extraction data, and just benefit from its language representation capabilities.
 
+In both approaches, we fine-tune CamemBERT on our custom dataset and evaluate the model performance using the F1-score metric. We also produce quantized versions of the fine-tuned models to reduce their size and facilitate deployment.
+
 You can find more details about the two approaches in this [GitHub repository](https://github.com/abmami/Fine-tuning-CamemBERT-for-Keyword-Extraction).
 
 ### Sentiment Analysis

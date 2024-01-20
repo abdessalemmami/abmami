@@ -67,8 +67,7 @@ My projects are carried out in the context of my academic studies, and also duri
 ## Video Insights Application (Work In Progress)
 
 The application leverages natural language processing techniques and models to analyze the audio of a video and identify patterns, trends, and key insights. It also provides a comprehensive overview of the video content such as sentiment analysis, summarization, topics, entities, etc..
-
-🔗 [Read more...]({% post_url /projects/2023-03-17-video-insights-app %}){:target="_blank"}
+🔗 [Read more...]({% post_url /projects/2023-03-17-automated-extraction-of-insights-from-educational-videos %}){:target="_blank"}
 
 ## Tunisian Sign Language Transcription
 
