@@ -69,7 +69,7 @@ Keyword extraction is the task of automatically extracting the most relevant wor
 - KeyBERT stands out as a powerful technique that utilizes BERT-based embeddings to generate representative keywords. By leveraging the contextual information captured by BERT, KeyBERT offers a comprehensive and nuanced approach to keyword extraction. 
 - YAKE (Yet Another Keyword Extractor) presents a noteworthy alternative, employing an unsupervised approach based on statistical measures such as term frequency and inverse document frequency (TF-IDF) to identify salient keywords.
 - RAKE (Rapid Automatic Keyword Extraction) is another notable method that relies on statistical heuristics, such as word frequency and co-occurrence, to extract keywords from text. This unsupervised technique is particularly adept at handling longer documents and can produce informative and concise keyword sets.
-- Fine-tuning CAMEMBERT, a variant of BERT designed specifically for French language processing, on a custom dataset shows promise for keyword extraction tasks in French text. By adapting the pre-trained model to domain-specific or task-specific data, we can enhance its ability to accurately extract relevant keywords from French transcripts.
+- Fine-tuning CamemBERT, a variant of BERT designed specifically for French language processing, on a custom dataset shows promise for keyword extraction tasks in French text. By adapting the pre-trained model to domain-specific or task-specific data, we can enhance its ability to accurately extract relevant keywords from French transcripts.
 
 In this project, we will be focusing on the last approach which is fine-tuning CamemBERT on a custom dataset for keyword extraction.
 #### 📊 Dataset
