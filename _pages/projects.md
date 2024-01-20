@@ -13,10 +13,10 @@ header:
 
 feature_row:
   - image_path: assets/images/projects/vi-1.jpg
-    alt: "Video Insights"
-    title: "Video Insights"
-    excerpt: "An app that extracts useful insights from recorded learning sessions using natural language processing techniques."
-    url: "/projects/video-insights-app"
+    alt: "Automated Extraction of Insights from Educational Videos"
+    title: "Automated Extraction of Insights from Educational Videos"
+    excerpt: "An application that extracts insights from recorded lectures or videos using natural language processing."
+    url: "/projects/automated-extraction-of-insights-from-educational-videos"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/projects/tslt-1.jpg
