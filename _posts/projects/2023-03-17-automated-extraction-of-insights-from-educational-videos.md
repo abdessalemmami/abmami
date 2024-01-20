@@ -58,6 +58,8 @@ We created a dataset by merging data from transcribed YouTube videos with the Wi
 
 📁 Github Repository: [Youtube Scraper & Transcriber Tool](https://github.com/abmami/Scraper-from-Youtube-Playlists)
 
+#### 🤖 Model
+
 We used CamemBERT, a state-of-the-art language model for French, to perform keyword extraction. CamemBERT is a pre-trained language model based on the RoBERTa architecture. It was pre-trained on 138GB of French text, which is 2.5 times the size of the French Wikipedia. CamemBERT is a powerful language model that can be fine-tuned for a variety of tasks, including keyword extraction.
 
 Transformer-based models are the current state-of-the-art for NLP tasks. It's a neural network architecture that uses attention mechanisms to learn contextual relations between words in a text, and it was introduced in 2017 in the paper [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf). It can be used for a variety of tasks, including text classification, question answering, and summarization. CamemBERT-base is composed of an embedding layer to represent each word as a vector, followed by 12 hidden layers composed mainly of two types of transformations: self-attention transformations and dense transformations. The model has 12 hidden layers, 768 hidden size, 12 attention heads, and 110 million parameters.
