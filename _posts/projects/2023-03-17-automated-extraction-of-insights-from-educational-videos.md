@@ -18,11 +18,7 @@ categories: projects
 
 ## Introduction 
 
-As the world adapted to the challenges of the COVID-19 pandemic, educational institutions embraced online learning through platforms like Google Meet and Zoom. To assist students in their studies, many online lectures were recorded by university professors for future reference during exam preparation. In the post-pandemic era, the reliance on these recorded lectures persists. Additionally, engagement with educational content on platforms like YouTube or Coursera has become increasingly prevalent, reflecting the integral role that online learning plays in our lives today.
-
-However, many challenges arise for students and learners: the often extended duration of these videos. This issue is further compounded for individuals with restricted access to a reliable internet connection. Frequently, learners encounter specific queries about a particular topic and seek precise answers. Additionally, the need for quick summaries of entire chapters or concise keywords to grasp fundamental concepts becomes apparent. These challenges underscore the evolving landscape of online education, emphasizing the importance of addressing accessibility and facilitating efficient learning.
-
-In recent years, Artificial Intelligence has emerged as a valuable solution to tackle such challenges. With the integration of AI and automation, we can derive insights and extract pertinent information from recorded lectures and educational videos available on the internet. By leveraging recent advancements in text summarization, transcription, keyword extraction, sentiment analysis, and other natural language processing tasks, our aim has been to create a tool for online learners. This tool is designed to support individuals in their learning journey by providing assistance in navigating educational content. All of this was part of an academic project within the context of the Natural Language Processing course at ESPRIT School of Engineering in 2023.
+As the world adapted to the challenges of the COVID-19 pandemic, educational institutions embraced online learning through platforms like Google Meet and Zoom. To assist students in their studies, many online lectures were recorded by university professors for future reference during exam preparation. In the post-pandemic era, the reliance on these recorded lectures persists. Additionally, engagement with educational content on platforms like YouTube or Coursera has become increasingly prevalent, reflecting the integral role that online learning plays in our lives today. However, many challenges arise for students and learners: the often extended duration of these videos. This issue is further compounded for individuals with restricted access to a reliable internet connection. Frequently, learners encounter specific queries about a particular topic and seek precise answers. Additionally, the need for quick summaries of entire chapters or concise keywords to grasp fundamental concepts becomes apparent. These challenges underscore the evolving landscape of online education, emphasizing the importance of addressing accessibility and facilitating efficient learning. In recent years, Artificial Intelligence has emerged as a valuable solution to tackle such challenges. With the integration of AI and automation, we can derive insights and extract pertinent information from recorded lectures and educational videos available on the internet. By leveraging recent advancements in text summarization, transcription, keyword extraction, sentiment analysis, and other natural language processing tasks, our aim has been to create a tool for online learners. This tool is designed to support individuals in their learning journey by providing assistance in navigating educational content. All of this was part of an academic project within the context of the Natural Language Processing course at ESPRIT School of Engineering in 2023.
 
 ## Project Overview 
 
@@ -35,7 +31,7 @@ The purpose of this academic project is to create a web application that is able
 
 Users initiate the process by uploading a video file or entering a YouTube URL containing the desired lecture. The key features of this application are transcription, keyword extraction, sentiment analysis and question answering. To technically achieve that, we will train or fine-tune natural language processing models for those different tasks.
 
--- Insert image here --
+<!-- TODO: add picture here -->
 
 ## Technical Overview
 
@@ -99,6 +95,8 @@ For this task, we will be dealing with the question answering functionality, mor
 To create our application, we used React for the frontend and FastAPI for the backend. The frontend is responsible for the user interface and the backend is responsible for the business logic and the communication with the different models using REST APIs. Fine-tuned models were exported and integrated all together in the backend. When a user uploads a video or provide a video URL, the frontend sends a request to the backend to start the transcription process. Once the transcription is done, the backend starts the summarization, keyword extraction, sentiment analysis, and question answering processes. Once all the processes are done, the frontend sends a request to the backend to get the results and display them to the user.
 
 Here's an overview of the application: 
+
+<!-- TODO: add picture here -->
 
 ## Conclusion
 
