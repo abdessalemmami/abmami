@@ -16,7 +16,7 @@ categories: projects
 
 ---
 
-## Introduction 
+# Introduction 
 
 As the world adapted to the challenges of the COVID-19 pandemic, educational institutions embraced online learning through platforms like Google Meet and Zoom. To assist students in their studies, many online lectures were recorded by university professors for future reference during exam preparation. In the post-pandemic era, the reliance on these recorded lectures persists. Additionally, engagement with educational content on platforms like YouTube or Coursera has become increasingly prevalent, reflecting the integral role that online learning plays in our lives today.
 
@@ -24,27 +24,27 @@ However, many challenges arise for students and learners: the often extended dur
 
 In recent years, Artificial Intelligence has emerged as a valuable solution to tackle such challenges. With the integration of AI and automation, we can derive insights and extract pertinent information from recorded lectures and educational videos available on the internet. By leveraging recent advancements in text summarization, transcription, keyword extraction, sentiment analysis, and other natural language processing tasks, our aim has been to create a tool for online learners. This tool is designed to support individuals in their learning journey by providing assistance in navigating educational content. All of this was part of an academic project within the context of the Natural Language Processing course at ESPRIT School of Engineering in 2023.
 
-## Project Overview 
+# Project Overview 
 
 The purpose of this academic project is to create a web application that is able to:
 
 - Transcribe the spoken content of the lecture, converting speech into a readable text format.
 - Identify and extract keywords from the lecture.
 - Analyze the tone and sentiment expressed in different parts of the lecture.
-- provide relevant answers to users’ questions based on the lecture content.
+- Provide relevant answers to users’ questions based on the lecture content.
 
 Users initiate the process by uploading a video file or entering a YouTube URL containing the desired lecture. The key features of this application are transcription, keyword extraction, sentiment analysis and question answering. To technically achieve that, we will train or fine-tune natural language processing models for those different tasks.
 
-## Technical Overview
+# Technical Overview
 
-### ⚫️ Transcription
+## ⚫️ Transcription
 
-### ⚫️ Summarization
+## ⚫️ Summarization
 
 After transcribing the video file to text, we can now work on the several functionalities that our project englobes. Starting with Text Summarization, we are essentially inputting the transcribed text to a pretrained summarization model called Pegasus with over 568M parameters. The output is a sequence of tokens selected by the model using beam search decoding algorithm. The selected sequence of tokens forms the final output summary with a fixed maximum length of 128 tokens.
 For the fine-tuning part, we will use ROUGE to evaluate the Pegasus model performance after fine-tuning it on the CNN/Daily Mail dataset.
 
-### ⚫️ Keyword Extraction
+## ⚫️ Keyword Extraction
 
 Keyword extraction is the task of automatically extracting the most relevant words and phrases from a document. These keywords can be used to summarize and understand the content of the lecture. In this project, the extracted keywords can be used to summarize the lecture and provide a quick overview of the content. Additionally, the keywords can be used to search for specific topics in the video. Our investigation into optimizing the process of keyword extraction has led us to uncover several approaches. We have identified the following methods: KeyBERT, YAKE, RAKE, and fine-tuning CamemBERT with a custom dataset. These methodologies shows potential in extracting keywords from various types of textual data.
 - KeyBERT stands out as a powerful technique that utilizes BERT-based embeddings to generate representative keywords. By leveraging the contextual information captured by BERT, KeyBERT offers a comprehensive and nuanced approach to keyword extraction. 
@@ -54,7 +54,7 @@ Keyword extraction is the task of automatically extracting the most relevant wor
 
 In this project, we will be focusing on the last approach which is fine-tuning CamemBERT on a custom dataset for keyword extraction.
 
-#### 📊 Dataset
+### 📊 Dataset
 
 We created a dataset by merging data from transcribed YouTube videos with the WikiNews French keywords dataset. This dataset contains approximately 340 documents and consists of two columns: "text" and "keywords." To collect the dataset, we created a tool to scrape and transcribe youtube videos using Faster-Whisper, PyTube, and yt-dlp.
 
@@ -70,7 +70,7 @@ Transformer-based models are the current state-of-the-art for NLP tasks. It's a 
 
 You can find more details about CamemBERT [here](https://camembert-model.fr/).
 
-#### 🎯 Approaches
+### 🎯 Approaches
 
 **Approach 1: Pre-finetuning on Sentence Similarity, followed by Fine-tuning for Keyword Extraction** 
 
@@ -84,14 +84,14 @@ In both approaches, we fine-tune CamemBERT on our custom dataset and evaluate th
 
 📁 Github Repository: [Approaches](https://github.com/abmami/Fine-tuning-CamemBERT-for-Keyword-Extraction).
 
-### ⚫️ Sentiment Analysis
+## ⚫️ Sentiment Analysis
 
 Next up, we have the sentiment analysis part which is used to predict the tone and motive of the speaker in the video, this will help provide more context to the situation as well as understanding the scenario. As usual, using the transcribed text as input, this time into the BERT-ABS for abstractive sentiment analysis with over a 140M parameters. The output of BERT-ABS can be represented as a set of (aspect_term, polarity_label) pairs, where aspect_term is a string representing the aspect term and polarity_label is a string representing the predicted sentiment polarity label for that aspect. The polarity label can take one of three values: positive, negative, or neutral. For the fine-tuning part, we will be using MAMS (Multimodal Aspect-based Sentiment Analysis) dataset, which provides aspect-based sentiment annotations for YouTube video comments in order to perform fine-tuning of BERT-ABS and we will evaluate the final results using F1-score.
 
-### ⚫️ Question Answering
+## ⚫️ Question Answering
 
 For this task, we will be dealing with the question answering functionality, more precisely reading comprehension of the transcribed text. We input the text and pose a question to the model and see if it gets the answer correctly. The model is based on BERT architecture but specifically trained on a large corpus of French text (138 Gb of French text) -> 110 million parameters. The output is the answer to the question asked. For the fine-tuning part, we used the camemBERT model which was fine-tuned on the FSQuAD (French Squad) dataset and fine-tuned it on the downstream task of open question answering. 
 
-## Deployment
+# Deployment
 
-## Conclusion
+# Conclusion
